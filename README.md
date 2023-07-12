@@ -5,6 +5,8 @@
 ## Record of algorithms in classroom
 
 ## Fibonacci Series
+![image](https://github.com/Rajkanwars15/STS3006/assets/89787756/46e6df59-2a25-4246-9c9f-b8ce90e8f6b3)
+
 ### Concept
 The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding numbers. The sequence starts with 0 and 1, and then continues as follows:
 
@@ -21,6 +23,8 @@ O(n<sup>2</sup>)
 O(n)
 
 ## Prime Number
+![image](https://github.com/Rajkanwars15/STS3006/assets/89787756/0dc1384e-dbdb-4164-babd-ca217af5935f)
+
 ### Concept
 A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers. A natural number greater than 1 that is not prime is called a composite number.
 
@@ -35,6 +39,8 @@ O(log(log n))
 O(n)
 
 ## Euler's Totient Function
+![image](https://github.com/Rajkanwars15/STS3006/assets/89787756/39439613-89f3-4d0e-bcb3-a72bfbd06d59)
+
 ### Concept
 Euler's totient function, aka Φ(n), is a function that counts the number of positive integers less than or equal to n that are relatively prime to n.
 
