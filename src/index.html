@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servlet Dropdown</title>
+</head>
+<body>
+<h1>Servlet Dropdown</h1>
+
+<select id="class-selector">
+    <option value="Fibonacci">Fibonacci</option>
+    <option value="bulbToggle">bulbToggle</option>
+    <option value="eulers_totient_fnc">eulers_totient_fnc</option>
+    <option value="prime">prime</option>
+</select>
+
+<button id="run-button">Run</button>
+
+<script>
+    const classSelector = document.getElementById("class-selector");
+    const runButton = document.getElementById("run-button");
+
+    runButton.addEventListener("click", () => {
+        const selectedClass = classSelector.value;
+        const request = new XMLHttpRequest();
+        request.open("GET", `/servlets/${selectedClass}`);
+        request.onload = () => {
+            if (request.status === 200) {
+                const output = request.responseText;
+                document.getElementById("output").innerHTML = output;
+            } else {
+                document.getElementById("output").innerHTML = "Error";
+            }
+        };
+        request.send();
+    });
+</script>
+
+<div id="output"></div>
+</body>
+</html>
