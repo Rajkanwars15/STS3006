@@ -14,7 +14,7 @@ class Prime {
         }
 
         for (int i = 2; i <= a; i++) {
-            if (!arr[i]) {
+            if (arr[i]) {
                 System.out.println(i);
             }
         }
