@@ -1,4 +1,6 @@
 # STS3006: Competitive Coding Basics
+![image](https://github.com/Rajkanwars15/STS3006/assets/89787756/9531cf5e-66dc-4e41-b378-b47959fd4a6d)
+
 ## Record of algorithms in classroom
 
 ## Fibonacci Series
