@@ -34,3 +34,21 @@ Number of co-prime pairs from 1 to N (1,N; 2,N...) for a number N
 O(n(log(n)))
 #### Space
 O(n)
+
+## strobogrammatic Number
+### Concept
+1 Digit- 0,1,8
+2 Digit- 0,1,8,(6,9)
+
+### Approach
+Split int into array of digits and check each digit. 
+Higher Efficiency for single digit
+In each iteration of the loop, the method compares the characters at the left and right positions.
+If the pair of characters forms a strobogrammatic pair, meaning they are either '0' and '0', '1' and '1', '8' and '8', '6' and '9', or '9' and '6', the pointers are moved closer to the center by incrementing left and decrementing right.
+If the characters do not form a strobogrammatic pair, the method immediately returns false
+
+### Complexities
+#### Time
+O(n)
+#### Space
+O(1)
