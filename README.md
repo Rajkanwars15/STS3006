@@ -56,3 +56,18 @@ If the characters do not form a strobogrammatic pair, the method immediately ret
 
 >#### Space
 >O(1)
+
+## [Bulb Toggle](src/bulbToggle.java)
+
+## [Alice Apple](src/aliceApple.java)
+### Concept
+M: The number of red apples required.<br />
+K: The number of red apples each tree grows.<br />
+N: The number of trees in the North that do not have red apples.<br />
+S: The number of trees in the South that do not have green apples.<br />
+W: The number of trees in the West that have some red apples.<br />
+E: The number of trees in the East that have some green apples.<br /><br />
+Check if M can be satisfied only from South direction, so output is minimum M.<br />
+If M can't be satisfied only from South, then we start looking in West & East and 
+we use  (S * K + E + W) apples. <br />
+If M still can't be satisfied then -1 because North does not have Red Apples.

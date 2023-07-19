@@ -1,23 +1,31 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class bulbToggle {
+class bulbToggle {
     public static void main(String[] args) {
-        int n = 5;
-        Boolean[] boolArray = new Boolean[n]; // initialize a boolean array
-        Arrays.fill(boolArray, Boolean.FALSE); // all the values will be false
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // number of rounds
+        int m = sc.nextInt(); // number of bulbs
 
+        boolean[] bulbs = new boolean[m];
+
+        // increment n times starting from 1
         for (int i = 1; i <= n; i++) {
-            for (int j = i - 1; j < n; j += i) {
-                boolArray[j] = !boolArray[j]; // Toggle the bulb's switch
+            // start from index 0; increment each j until m
+            for (int j = i - 1; j < m; j += i) {
+                bulbs[j] = !bulbs[j];
             }
-            System.out.println("Bulbs state after iteration " + i + ": " + Arrays.toString(boolArray));
+            System.out.println("Bulbs state after iteration " + i + ": " + Arrays.toString(bulbs));
         }
 
-        System.out.println("Bulbs switched on at the end:");
-        for (int i = 0; i < n; i++) {
-            if (boolArray[i]) {
-                System.out.println(i + 1); // Bulb index starts from 1
+        // count ON bulbs
+        int count = 0;
+        for (boolean bulbState : bulbs) {
+            if (bulbState) {
+                count++; // increment on each true
             }
         }
+
+        System.out.println("Number of bulbs ON at the end: " + count);
     }
 }
