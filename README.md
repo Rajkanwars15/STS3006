@@ -88,3 +88,7 @@ Collect the bits using bitwise left shift.
 
 >#### Space
 >O(1)
+
+## [Longest sequence of 1’s in binary with 1 flip](src/binaryLongestSequence.java)
+### Concept
+Flip exactly 1 bit in integer to find longest sequence of 1's.
