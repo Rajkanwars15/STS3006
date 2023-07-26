@@ -71,3 +71,20 @@ Check if M can be satisfied only from South direction, so output is minimum M.<b
 If M can't be satisfied only from South, then we start looking in West & East and 
 we use  (S * K + E + W) apples. <br />
 If M still can't be satisfied then -1 because North does not have Red Apples.
+
+## [Chinese Remainder Theorem](src/chineseRemainderTheorem.java)
+
+## [Reverse Bits of an Integer](src/reverseBits.java)
+### Concept
+Input of integer N. Take binary of this integer. Reverse the binary expression. Print reversed binary expression as a decimal.
+
+### Approach
+Bits of N are are obtained using bitwise right shift. <br />
+Collect the bits using bitwise left shift.
+
+### Complexities
+>#### Time
+>O(n)
+
+>#### Space
+>O(1)
