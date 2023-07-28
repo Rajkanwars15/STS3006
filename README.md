@@ -92,3 +92,45 @@ Collect the bits using bitwise left shift.
 ## [Longest sequence of 1’s in binary with 1 flip](src/binaryLongestSequence.java)
 ### Concept
 Flip exactly 1 bit in integer to find longest sequence of 1's.
+
+## [Booth's Algorithm](src/booth.java)
+### Concept
+A<sub>C</sub>, Q<sub>n+1</sub> = 0 <br/>
+Q<sub>n</sub>, B<sub>r</sub>, S<sub>c</sub><br/>
+Int to binary should be minimum 4 bits. <br/>
+Q<sub>n</sub> is multiplier
+
+Find 3x6 <br/>
+
+| A<sub>C</sub> | Q<sub>n</sub> | Q<sub>n+1</sub> |
+|---------------|---------------|-----------------|
+| 0000          | 0110          | 0               |
+| 0000          | 0011          | 0               |
+| 1101          | 1001          | 1               |
+| 1111          | 0100          | 1               |
+| 0001          | 0010          | 0              |
+
+### Approach
+yet to understand 
+
+### Complexities
+>#### Time
+>O(n)
+
+>#### Space
+>O(1)
+
+## [Swap two nibbles in a byte](src/swapNibbles.java)
+### Concept
+A byte has 8 bits, nibble has 4.
+
+### Approach
+Extract LSB 4 bits and left shift them by 4
+Extract MSB 4 bits and right shift them bt 4
+
+### Complexities
+>#### Time
+>O(1)
+
+>#### Space
+>O(1)

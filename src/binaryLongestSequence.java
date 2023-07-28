@@ -16,10 +16,8 @@ public class binaryLongestSequence {
             if ((n & 1) == 1) {
                 currLen++;
             }
-            // If Current bit is a 0 then check next bit of a
+            /* If the current bit is 1, currLen is incremented to track the length of the current sequence of consecutive 1s. If the current bit is 0, prevLen is updated to either 0 (if the next bit is also 0) or set to the value of currLen (if the next bit is 1). Then, currLen is reset to 0 since two consecutive 0s mean the end of the current sequence.*/
             else if ((n & 1) == 0) {
-                /* Update prevLen to 0 (if next bit is 0)
-                or currLen (if next bit is 1). */
                 prevLen = (n & 2) == 0 ? 0 : currLen;
 
                 // If two consecutively bits are 0 then currLen also will be 0.
