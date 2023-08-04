@@ -134,3 +134,12 @@ Extract MSB 4 bits and right shift them bt 4
 
 >#### Space
 >O(1)
+
+## [Binary Palindrome](src/binaryPalindrome.java)
+
+### Complexities
+>#### Time
+>O(logn)
+
+>#### Space
+>O(1)
