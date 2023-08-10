@@ -74,6 +74,8 @@ If M still can't be satisfied then -1 because North does not have Red Apples.
 
 ## [Chinese Remainder Theorem](src/chineseRemainderTheorem.java)
 
+# Bitwise Operator Algorithms
+
 ## [Reverse Bits of an Integer](src/reverseBits.java)
 ### Concept
 Input of integer N. Take binary of this integer. Reverse the binary expression. Print reversed binary expression as a decimal.
@@ -143,3 +145,36 @@ Extract MSB 4 bits and right shift them bt 4
 
 >#### Space
 >O(1)
+
+## [Karatsuba Algorithm](src/karatsuba.java)
+### Concept
+Divide & Conquer algorithm
+
+| 12 | 34 | 56 | 78 |
+|----|----|----|----|
+| A  | B  | C  | D  |
+
+| ac    | bd    | (a+b)(c+d) |
+|-------|-------|------------|
+| 1 x 5 | 2 x 6 | 3 x 11     |
+| 5     | 12    | 33         |
+
+# Array Algo
+
+## [Max Sum of Hourglass in given matrix](src/hourglassMaxSum.java)
+
+### Concept
+3x3 matrix. Shape of: I to take only 7 cells.
+Print max sum obtained, the elements which result in the sum and their index positions. 
+
+### Approach
+Start from 0,0. Go upto R-2, C-2.
+#### 1<sup>st</sup> Iteration
+Check sum of 0,0; 0,1; 0,2; 1,1; 2,0; 2,1; 2,2
+
+### Complexities
+>#### Time
+>O(n<sup>2</sup>)
+
+>#### Space
+>O(n)
