@@ -30,7 +30,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd STS3006
 ```
 
 Make sure you have JDK20.
