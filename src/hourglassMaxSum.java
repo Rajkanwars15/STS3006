@@ -1,10 +1,12 @@
 class HourglassMaxSum {
     public static void main(String[] args) {
-        /*int [][] mat = {
+
+        /* int [][] mat = {
                 {4, 2},
                 {2, 4},
                 {3, 3}
-        };*/
+        }; */
+
         int[][] mat = {
                 {6, 4, -1, 0, 3},
                 {2, 4, -2, -1, 6},
